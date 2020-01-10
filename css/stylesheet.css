@@ -1,0 +1,242 @@
+body {
+	/*Want to change background image?*/
+	/*Upload a new one to the img folder.*/
+	/*Make sure you name it 'minecraft.jpg'*/
+	background: linear-gradient(rgba(20, 26, 35,0.55),rgba(20, 26, 35, 0.55)),
+				url("../images/bgmordo.png") no-repeat center center fixed;
+	background-size: cover;
+	font-family: "Open Sans", Helvetica;
+	margin: 0;
+}
+
+html, body {
+	width: 100vw;
+	height: 100vh;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+}
+
+a {
+	text-decoration: none;
+}
+
+p {
+	margin: 0;
+	padding: 3px;
+}
+
+.container {
+	text-align: center;
+}
+
+.playercount {
+	display: inline-block;
+	margin: 20px 15px 0 15px;
+	padding: 2px 0;
+	background-color: rgba(15, 199, 209, 0.75);
+	font-size: 1em;
+	color: white;
+	text-align: center;
+	border-radius: 5px 0 5px 0;
+	line-height: 27px;
+}
+
+.playercount > p > span {
+	font-weight: bold;
+	padding: 1px 4px;
+	border-radius: 3px;
+	background: rgba(9, 150, 158, 0.7);
+	margin: 0 2px;
+}
+
+.extrapad {
+	padding: 0;
+}
+
+.ip {
+	cursor: pointer;
+}
+
+.items {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-pack: distribute;
+	    justify-content: space-around;
+	-ms-flex-preferred-size: 100px;
+	    flex-basis: 100px;
+	padding: 18px 0 10px 0;
+
+}
+
+.item img {
+	-webkit-transition: all 0.2s ease;
+	-o-transition: all 0.2s ease;
+	transition: all 0.2s ease;
+	margin-bottom: 7px;
+}
+
+.item img:hover {
+	-webkit-transform:scale(1.1);
+	    -ms-transform:scale(1.1);
+	        transform:scale(1.1);
+}
+
+.img {
+	width: 10%;
+}
+
+.title {
+	font-weight: bold;
+	font-size: 17px;
+	color: white;
+}
+
+.subtitle {
+	color: #cfcfcf;
+	font-size: 12px;
+}
+
+.title,
+.subtitle {
+	margin: 0;
+	padding: 0;
+}
+
+@media(min-width: 400px) {
+	.playercount {
+		margin-top: 30px;
+		padding: 5px;
+	}
+
+	.playercount > p > span {
+		padding: 2px 7px;
+	}
+}
+
+@media(min-width: 600px) {
+	.title {
+		font-size: 24px;
+	}
+
+	.subtitle {
+		font-size: 15px;
+	}
+
+	.logo img {
+		width: 530px; /* Change image size for desktop */
+	}
+	.img {
+		width: 100%;
+	}
+	.items {
+		padding: 30px 0 20px 0;
+	}
+	.playercount {
+		font-size: 1.22em;
+		padding: 10px;
+	}
+
+	.extrapad {
+		padding: 0 42.5px;
+	}
+
+	.playercount > p > span {
+		padding: 4px 7px;
+	}
+}
+
+@media(min-width: 1000px) {
+	.items {
+		-webkit-box-pack: center;
+		    -ms-flex-pack: center;
+		        justify-content: center;
+	}
+
+	.item:not(:first-child) {
+		margin-left: 90px;
+	}
+}
+
+.card {
+	display: grid;
+	grid-template-columns: 300px;
+	grid-template-rows: 210px 210px 80px;
+	grid-template-areas: "image" "text" "stats";
+	border-radius: 18px;
+	background: white;
+	box-shadow: 5px 5px 15px rgba(0,0,0,0.9);
+	font-family: Open Sans;
+	text-align: center;
+}
+
+.card-image {
+	grid-area: image;
+}
+.card-text {
+	grid-area: text;
+}
+.card-stats {
+	grid-area: stats; 
+}
+
+.card-image {
+	grid-area: image;
+	background: url("ing/none.png");
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+	background-size: cover;
+}
+
+.btn11
+{
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 200px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    color: #fff;
+    font-size: 24px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: sans-serif;
+    box-sizing: border-box;
+    background: #ff0088;
+    background-size: 10000%;
+    border-radius: 10px;
+}
+.btn11:hover
+{
+    transition: 0.6s ease;
+    background: #000;
+    background-size: 10px;
+    border-radius: 15px;
+}
+@keyframes animate
+{
+    0%
+    {
+        background-position: 0%;
+    }
+    100%
+    {
+        background-position: 400%;
+    }
+}
+
+.free2 {
+	bottom: 50px;
+	right: -43px;
+	posiotion: absolute;
+	margin-top: -400px;
+}
